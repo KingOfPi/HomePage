@@ -112,7 +112,7 @@
                     密集班(<del>1400</del> <font style="color:red">1200</font>/2hr)
                     短期課：
                     寒/暑假班(<del>700</del> <font style="color:red">600</font>/hr)</p>
-                  <p class="hidden-sm">歡迎來電諮詢，手機：<br><a class="hidden-sm" href="tel:+886-973016082">0973-016-082</a><br>Allen老師</p>
+                  <p class="hidden-sm">歡迎來電諮詢，手機：<br><a class="hidden-sm" href="tel:+886-973198156">0973-198-156</a><br>Andy老師</p>
                   <div class="scroll-to-section"><a href="#section4">閱讀更多...</a></div>
               </div>
               </div>
@@ -209,7 +209,7 @@
           <div class="owl-carousel owl-theme">
             <div class="item">
               <!-- 觸發彈窗 - 圖片改為你的圖片地址 -->
-              <img id="myImg" src="assets/images/courses-01.gif" alt="S1 個人網頁、打蚊子遊戲">
+              <img id="myImg" onclick="hit1()" src="assets/images/courses-01.gif" alt="S1 個人網頁、打蚊子遊戲">
               <div class="down-content">
                 <h4>S1我的資訊時代</h4>
                 <p>時數：36<br>學習：基礎HTML、CSS、JavaScript<br>製作：個人網頁、打蚊子遊戲</p>
@@ -219,7 +219,7 @@
               </div>
             </div>
             <div class="item">
-              <img id="myImg2" src="assets/images/courses-02.gif" alt="S2 搶錢大作戰遊戲、飛蝶大逃亡遊戲">
+              <img id="myImg2" onclick="hit2()" src="assets/images/courses-02.gif" alt="S2 搶錢大作戰遊戲、飛蝶大逃亡遊戲">
               <div class="down-content">
                 <h4>S2我的好玩遊戲</h4>
                 <p>時數：36<br>學習：進階HTML、CSS、JavaScript<br>製作：搶錢大作戰遊戲、飛蝶大逃亡遊戲</p>
@@ -314,43 +314,8 @@
             </div>
           </div>
         </div>
-        <!-- 彈窗 -->
-        <div id="myModal" class="modal">
-          <!-- 彈窗内容 -->
-          <img class="modal-content" id="img01">
-          <!-- 文本描述 -->
-          <div id="caption"></div>
-          <!-- 關閉按鈕 -->
-          <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-        </div>
       </div>
     </section>
-
-    <script>
-      // 獲取彈窗
-      var modal = document.getElementById('myModal');
-      // 獲取圖片插入到彈窗 - 使用 "alt" 屬性作為文本部分的內容
-      var img = document.getElementById('myImg');
-      var img2 = document.getElementById('myImg2');
-      var modalImg = document.getElementById("img01");
-      var captionText = document.getElementById("caption");
-      img.onclick = function(){
-          modal.style.display = "block";
-          modalImg.src = this.src;
-          captionText.innerHTML = this.alt;
-      }
-      img2.onclick = function(){
-          modal.style.display = "block";
-          modalImg.src = this.src;
-          captionText.innerHTML = this.alt;
-      }
-      // 獲取 <span> 元素，設置關閉按鈕
-      var span = document.getElementsByClassName("close")[0];
-      // 當點擊 (x), 關閉彈窗
-      span.onclick = function() { 
-        modal.style.display = "none";
-      }
-    </script> 
 
     <section class="section coming-soon" data-section="section4">
       <div class="container">
@@ -375,8 +340,8 @@
               <a style="font-size: 18px;">
               以上收費僅供參考，更多最新收費詳情與細節請洽手機：
               </a>
-              <a style="font-size: 18px;" href="tel:+886-973016082">0973-016-082</a> 
-              <a style="font-size: 18px;">Allen老師詢問，謝謝您!
+              <a style="font-size: 18px;" href="tel:+886-973198156">0973-198-156</a> 
+              <a style="font-size: 18px;">Andy老師詢問，謝謝您!
               </a>
             </h4>
           </div>
@@ -416,15 +381,15 @@
             <div class="item">
               <img src="assets/images/teachers-01.png" alt="Teacher #1">
               <div class="down-content">
-                <h4>Allen老師</h4>
-                <p>教學資歷：10年<br>專長：HTML、CSS、JavaScript、Python、Raspberry Pi<br>經歷：多家補習班全科跑課老師</p>
+                <h4>Andy老師</h4>
+                <p>教學資歷：6年<br>專長：HTML、CSS、JavaScript、PHP、MySQL、Python<br>經歷：多家公司網站設計合作對象、前台灣微軟雲端服務部門實習生</p>
               </div>
             </div>
             <div class="item">
               <img src="assets/images/teachers-02.png" alt="Teacher #2">
               <div class="down-content">
-                <h4>Andy老師</h4>
-                <p>教學資歷：6年<br>專長：HTML、CSS、JavaScript、PHP、MySQL、Python<br>經歷：多家公司網站設計合作對象、前台灣微軟雲端服務部門實習生</p>
+                <h4>Allen老師</h4>
+                <p>教學資歷：7年<br>專長：HTML、CSS、JavaScript、Python、Raspberry Pi<br>經歷：多家補習班全科跑課老師</p>
               </div>
             </div>
             <div class="item">
@@ -462,8 +427,8 @@
               <em>Q3.有程式經驗可以跳級學習嗎?</em><br><a style="font-size: 18px;">A3：盡量不要!我們每期課程都會完整囊括業界最常用的概念與功能，循序漸進的學習才能真正建立完整的程式設計能力!</a><br><br>
               <em>Q4.課程有年齡限制嗎?</em><br><a style="font-size: 18px;">A4：只要小學三年級以上皆可學習!學海無涯因此越早學習越能贏在起跑點!</a><br><br>
               <em>Q5.一堂課價格是多少呢?</em><br><a style="font-size: 18px;">A5：最新收費詳情與細節請洽手機：</a>
-              <a style="font-size: 18px;" href="tel:+886-973016082">0973-016-082</a> 
-              <a style="font-size: 18px;">Allen老師詢問，謝謝您!
+              <a style="font-size: 18px;" href="tel:+886-973198156">0973-198-156</a> 
+              <a style="font-size: 18px;">Andy老師詢問，謝謝您!
               </a></h4>
             </div>
         </div>
@@ -474,11 +439,21 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p><i class="fa fa-copyright"></i>𝝿發王潛能開發學院 2022<br>歡迎來電諮詢，手機：<a href="tel:+886-973016082">0973-016-082</a> Allen老師</p>
+            <p><i class="fa fa-copyright"></i>𝝿發王潛能開發學院 2022<br>歡迎來電諮詢，手機：<a href="tel:+886-973198156">0973-198-156</a> Andy老師</p>
             </div>
         </div>
       </div>
     </footer>
+
+    <!-- 彈窗 -->
+    <div id="myModal" class="modal">
+      <!-- 彈窗内容 -->
+      <img class="modal-content" id="img01">
+      <!-- 文本描述 -->
+      <div id="caption"></div>
+      <!-- 關閉按鈕 -->
+      <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+    </div>
 
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
@@ -492,54 +467,79 @@
       <script src="assets/js/slick-slider.js"></script>
       <script src="assets/js/custom.js"></script>
       <script>
-          //according to loftblog tut
-          $('.nav li:first').addClass('active');
+        // 獲取彈窗
+        var modal = document.getElementById('myModal');
+        // 獲取圖片插入到彈窗 - 使用 "alt" 屬性作為文本部分的內容
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        function hit1()
+        {
+          var img = document.getElementById('myImg');
+          modal.style.display = "block";
+          modalImg.src = img.src;
+          captionText.innerHTML = img.alt;
+        }
+        function hit2()
+        {
+          var img = document.getElementById('myImg2');
+          modal.style.display = "block";
+          modalImg.src = img.src;
+          captionText.innerHTML = img.alt;
+        }
+        // 獲取 <span> 元素，設置關閉按鈕
+        var span = document.getElementsByClassName("close")[0];
+        // 當點擊 (x), 關閉彈窗
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
 
-          var showSection = function showSection(section, isAnimate) {
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
             var
-            direction = section.replace(/#/, ''),
-            reqSection = $('.section').filter('[data-section="' + direction + '"]'),
-            reqSectionPos = reqSection.offset().top - 0;
-
-            if (isAnimate) {
-              $('body, html').animate({
-                scrollTop: reqSectionPos },
-              800);
-            } else {
-              $('body, html').scrollTop(reqSectionPos);
-            }
-
-          };
-
-          var checkSection = function checkSection() {
-            $('.section').each(function () {
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
               var
-              $this = $(this),
-              topEdge = $this.offset().top - 80,
-              bottomEdge = topEdge + $this.height(),
-              wScroll = $(window).scrollTop();
-              if (topEdge < wScroll && bottomEdge > wScroll) {
-                var
-                currentId = $this.data('section'),
-                reqLink = $('a').filter('[href*=\\#' + currentId + ']');
-                reqLink.closest('li').addClass('active').
-                siblings().removeClass('active');
-              }
-            });
-          };
-
-          $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
-            if($(e.target).hasClass('external')) {
-              return;
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
             }
-            e.preventDefault();
-            $('#menu').removeClass('active');
-            showSection($(this).attr('href'), true);
           });
+        };
 
-          $(window).scroll(function () {
-            checkSection();
-          });
+        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
       </script>
   </body>
 </html>
